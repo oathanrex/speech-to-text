@@ -19,10 +19,10 @@
 
 ## 🚀 Live Demo
 
-The site is hosted on **GitHub Pages**. When you publish, replace the placeholder URL below:
+Hosted on **GitHub Pages**:
 
 ```
-https://YOUR-USERNAME.github.io/speech-to-text/
+https://oathanrex.github.io/
 ```
 
 ## 🧑‍💻 How to Use
@@ -61,15 +61,14 @@ The repository is ships ready for Google ranking:
 - Semantic HTML with logical heading hierarchy (`h1 → h2 → h3`)
 - Meta description, Open Graph & Twitter cards
 - **JSON-LD structured data** (`WebApplication` schema) for rich results
-- `robots.txt` + `sitemap.xml` (update the domain after publishing)
+- `robots.txt` + `sitemap.xml` pointing to `https://oathanrex.github.io/`
 - Mobile-friendly responsive layout, fast local assets
 - WCAG 2.1 AA accessible (contrast, keyboard focus, skip links, ARIA)
 
 ### To rank in Google (after pushing):
-1. Update `YOUR-USERNAME` placeholders in `sitemap.xml`, `robots.txt` and the JSON-LD block in `index.html` with your real site URL.
-2. Submit the site + sitemap in **Google Search Console**.
-3. Request indexing for the homepage.
-4. Create an **About/Contact** presence (already included in the FAQ & footer contact links) — quality content pages help rankings.
+1. Submit the site + sitemap in **Google Search Console**.
+2. Request indexing for the homepage.
+3. Create an **About/Contact** presence (already included in the FAQ & footer contact links) — quality content pages help rankings.
 
 ## 🛡️ Google AdSense Friendly
 
@@ -83,19 +82,17 @@ The site is structured to pass AdSense review:
 
 ## 📦 Deployment (GitHub Pages)
 
+The repo is already initialised and committed. Just run:
+
 ```bash
-# 1. Create the repo on github.com, then:
-git init
-git add .
-git commit -m "Initial release: Voice Dictation - Speech to Text"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/speech-to-text.git
+# 1. Create an empty repo named "oathanrex.github.io" on github.com, then:
+git remote add origin https://github.com/oathanrex/oathanrex.github.io.git
 git push -u origin main
 
 # 2. Enable it in Settings → Pages → Source: main branch → Save
 ```
 
-The site will be live at `https://YOUR-USERNAME.github.io/speech-to-text/`.
+The site will be live at `https://oathanrex.github.io/`.
 
 ## 📄 License
 
