@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Speech To Text — Fresh Emerald theme + modern editor (WCAG 2.1 AA)
+   Primary: Emerald 700 #047857 (white 5.48:1)
+   Hover:   Emerald 800 #065F46 (white 7.40:1)
+   Accent:  Amber 700 #B45309 (white 4.52:1)
+   Dark:    Deep forest #041F15 (white 18:1)
+   Panel:   Emerald 950 #022C22 (white 15.9:1)
+   ========================================================================== */
+:root{
+  --st-primary:#047857;
+  --st-primary-dark:#065F46;
+  --st-primary-deep:#064E3B;
+  --st-secondary:#B45309;
+  --st-secondary-dark:#92400E;
+  --st-ink:#0F172A;
+  --st-body:#1E293B;
+  --st-dark-bg:#041F15;
+  --st-dark-panel:#022C22;
+  --st-dark-text:#E6F4EE;
+  --st-dark-muted:#A7C4B4;
+  --st-dark-link:#6EE7B7;
+  --st-panel-text:#A7F3D0;
+  --st-light-bg:#F1F5F3;
+  --st-focus-light:#047857;
+  --st-focus-dark:#6EE7B7;
+}
+
+/* ---------- Skip link ---------- */
+.skip-link{position:absolute;left:-10000px;top:0;z-index:3000;background:var(--st-primary);color:#fff;padding:.85em 1.4em;border-radius:0 0 .4em 0;font-weight:600;text-decoration:none}
+.skip-link:focus{left:0;color:#fff}
+
+/* ---------- Keyboard focus visibility (2.4.7) ---------- */
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--st-focus-light);outline-offset:2px}
+.bg--dark a:focus-visible,.bg--primary a:focus-visible,footer a:focus-visible,.nav-container a:focus-visible{outline-color:var(--st-focus-dark)}
+
+/* ---------- Typography & body ---------- */
+body{color:var(--st-body)}
+h1,h2,h3,h4,h5,h6{color:var(--st-ink)}
+.bg--dark h1,.bg--dark h2,.bg--dark h3,.bg--dark h4,.bg--dark h5,.bg--dark h6{color:#fff}
+
+/* ---------- Links (4.5:1+) ---------- */
+.main-container a:not(.btn):not(.btn__text){color:var(--st-primary);text-decoration-thickness:2px;text-underline-offset:3px}
+.main-container a:not(.btn):not(.btn__text):hover{color:var(--st-primary-deep)}
+.bg--primary a:not(.btn):not(.btn__text){color:var(--st-dark-link)!important}
+.bg--dark a:not(.btn),footer a:not(.btn){color:var(--st-dark-link)}
+.bg--dark a:not(.btn):hover,footer a:not(.btn):hover{color:#A7F3D0}
+
+/* ---------- Buttons (white text >= 4.5:1) ---------- */
+.btn--primary,.btn--primary:visited{background:var(--st-primary);border-color:var(--st-primary)}
+.btn--primary:hover,.btn--primary:focus{background:var(--st-primary-dark);border-color:var(--st-primary-dark)}
+.btn--primary-1,.btn--primary-1:visited{background:var(--st-primary-dark);border-color:var(--st-primary-dark)}
+.btn--primary-1:hover,.btn--primary-1:focus{background:var(--st-primary-deep);border-color:var(--st-primary-deep)}
+.btn--primary-2,.btn--primary-2:visited{background:var(--st-secondary);border-color:var(--st-secondary)}
+.btn--primary-2:hover,.btn--primary-2:focus{background:var(--st-secondary-dark);border-color:var(--st-secondary-dark)}
+.btn{border-radius:.45em}
+.btn--sm{border-radius:.45em;padding:.55em 1em}
+.btn .btn__text{font-weight:600}
+
+/* ---------- Backgrounds ---------- */
+.bg--primary{background:var(--st-dark-panel)}
+.bg--primary p,.bg--primary ul{color:var(--st-panel-text)}
+.bg--primary .notepad,.bg--primary .notepad blockquote,.bg--primary .notepad li,.bg--primary .notepad ol,.bg--primary .notepad p,.bg--primary .notepad ul{color:#282625}
+.bg--primary .btn .btn__text{color:#fff}
+.bg--dark{background:var(--st-dark-bg)}
+.bg--dark:not(.nav-bar):not(.bar){color:var(--st-dark-text)}
+.bg--secondary{background:var(--st-light-bg)}
+
+/* ---------- Header navigation ---------- */
+.nav-container .bar,.nav-container .bar.pos-fixed{background:var(--st-dark-bg)}
+.nav-container .logo-dark{display:none!important}
+.nav-container .menu-horizontal>li>a{color:var(--st-dark-text);opacity:1!important;font-weight:600}
+.nav-container .menu-horizontal>li>a:hover{color:#fff}
+
+/* ---------- Typed text accent (12:1 on dark) ---------- */
+.color--primary{color:var(--st-dark-link)!important}
+.typed-text--cursor::after{border-right-color:var(--st-dark-link)}
+
+/* ---------- Features ---------- */
+.feature-1 .icon{color:var(--st-primary);border-radius:.4em;background:#ECFDF5;padding:.35em}
+
+/* ---------- Forms ---------- */
+.input-select select,.input-number input{color:var(--st-body);border-color:#A7A29A;border-radius:.45em}
+.input-select select:focus,.input-number input:focus{border-color:var(--st-primary)}
+
+/* ---------- Footer ---------- */
+footer .text-block p{color:var(--st-dark-muted)}
+footer .type--fine-print{color:var(--st-dark-muted)}
+footer h3{color:#fff}
+
+/* ---------- Back to top ---------- */
+.back-to-top{background:var(--st-primary);box-shadow:0 2px 12px rgba(4,31,21,.35)}
+.back-to-top i{color:#fff}
+/* ==========================================================================
+   Modern dictation editor (replaces the stock Quill look)
+   NOTE: pure CSS — no JS/DOM changes, dictation functions untouched
+   ========================================================================== */
+section#app{background:linear-gradient(160deg,#022C22 0%,#04352A 55%,#022C22 100%)}
+
+/* Language selector */
+section#app .langdd select{background:#fff;border:1px solid #CDE8DC;border-radius:.65em;padding:.8em 2.4em .8em 1em;font-weight:600;color:#064E3B;box-shadow:0 2px 10px rgba(4,31,21,.15)}
+
+/* Notepad card */
+.notepad{background:#fff;border-radius:1.1em;box-shadow:0 10px 40px rgba(4,31,21,.28);border:1px solid #E4EFE9;overflow:hidden;min-height:80vh}
+
+/* Quill toolbar: floating pill */
+.ql-toolbar.ql-snow{background:#F4FAF7;border:none;border-bottom:1px solid #E4EFE9;border-radius:1.1em 1.1em 0 0;padding:.7em 1em;display:flex;flex-wrap:wrap;gap:.2em}
+.ql-toolbar.ql-snow .ql-formats{margin-right:.35em}
+.ql-toolbar.ql-snow button{border-radius:.4em;width:2.1em;height:2.1em;transition:all .15s ease}
+.ql-toolbar.ql-snow button:hover{background:#D9F2E7}
+.ql-toolbar.ql-snow .ql-picker{height:2.1em}
+.ql-toolbar.ql-snow .ql-picker-label{border-radius:.4em}
+.ql-toolbar.ql-snow button.ql-active{background:#047857;color:#fff}
+.ql-toolbar.ql-snow button.ql-active .ql-stroke{stroke:#fff}
+.ql-toolbar.ql-snow button.ql-active .ql-fill{fill:#fff}
+
+/* Quill editor body */
+.ql-container.ql-snow{border:none;font-size:1.025em}
+.ql-editor{min-height:62vh;padding:1.6em 1.8em;font-family:'Source Sans Pro','Segoe UI',sans-serif;font-size:17px;line-height:1.75;color:#1E293B;background:repeating-linear-gradient(transparent,transparent 31px,#F0F7F3 31px,#F0F7F3 32px)}
+.ql-editor:focus{outline:none}
+.ql-editor.ql-blank::before{color:#94A3B8;font-style:italic}
+
+/* Microphone / start button */
+.btn-mic{border-radius:2.4em!important;padding:.9em 2em!important;font-size:1.05em;box-shadow:0 6px 20px rgba(4,31,21,.35);transition:all .2s ease}
+.btn-mic:hover{transform:translateY(-1px)}
+.loading-indicator{width:1.15em;height:1.15em;border-radius:50%;border:3px solid rgba(255,255,255,.35);border-top-color:#fff;display:inline-block;animation:spinc .8s linear infinite;vertical-align:-.25em;margin-left:.5em}
+@keyframes spinc{to{transform:rotate(360deg)}}
+
+/* Action buttons */
+.action-buttons .btn{border-radius:.5em;margin:.15em}
+.action-buttons .btn-group{display:flex;flex-wrap:wrap;gap:.3em}
+.action-buttons .btn--sm{padding:.5em .8em;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+
+/* Commands mini-table injected by app JS */
+.commands table{background:rgba(255,255,255,.06);border-collapse:collapse;border-radius:.6em;overflow:hidden}
+.commands table td{color:#D1FAE5}
+.commands table td:first-child{font-weight:600;color:#6EE7B7}
+
+/* Log / status line */
+section#app .log{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:.7em;padding:.8em 1em;color:#D1FAE5}
+section#app .log img.bars{filter:drop-shadow(0 2px 6px rgba(4,31,21,.4))}
+
+/* ---------- Reduced motion (2.3.3) ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}

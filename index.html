@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Voice Dictation - Online Speech Recognition</title>
+    <meta name="description" content="Speech to Text is a free online speech recognition software that will help you write emails, documents and essays using your voice narration and without typing.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:url" content="index.html">
+    <meta property="og:image" content="images/languages.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:image" content="images/languages.jpg">
+    <meta name="twitter:url" content="index.html">
+    <meta name="twitter:title" content="Voice Dictation - Type with your voice using Google Speech Recognition">
+    <meta name="twitter:creator" content="@oathanrex">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:site_name" content="Voice Dictation - Online Speech Recognition">
+    <meta property="og:locale" content="en_US">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#047857">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <link rel="canonical" href="index.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Voice Dictation - Online Speech Recognition",
+      "url": "https://YOUR-USERNAME.github.io/speech-to-text/",
+      "description": "Free online speech recognition and voice typing tool that transcribes your speech to text in real time using Google Speech Recognition in Chrome.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Windows, macOS, Linux, Android",
+      "browserRequirements": "Requires Google Chrome",
+      "inLanguage": "en",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": "Speech to text, voice typing, dictation, punctuation by voice, 60+ languages, text to speech, publish notes, export to file",
+      "author": { "@type": "Person", "name": "Oathan Rex" }
+    }
+    </script>
+    <style>
+        @-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}#wait-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000}#wait,#wait:after,#wait:before{border-radius:50%;border:3px solid transparent}#wait{display:block;width:150px;height:150px;margin:-75px 0 0 -75px;z-index:1001;position:relative;left:50%;top:50%;border-top-color:#047857;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite}#wait:after,#wait:before{content:"";position:absolute;top:5px;left:5px;right:5px;bottom:5px;border-top-color:#34D399;-webkit-animation:spin 3s linear infinite;animation:spin 3s linear infinite}#wait:after{top:15px;left:15px;right:15px;bottom:15px;border-top-color:#B45309;-webkit-animation:spin 1.5s linear infinite;animation:spin 1.5s linear infinite}#wait-wrapper .wait-section{position:fixed;top:0;width:51%;height:100%;background:#222;z-index:1000;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}#wait-wrapper .wait-section.section-left{left:0}#wait-wrapper .wait-section.section-right{right:0}.loaded #wait-wrapper .wait-section.section-left,.loaded #wait-wrapper .wait-section.section-right{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);transition:all .7s .3s cubic-bezier(.645,.045,.355,1)}.loaded #wait-wrapper .wait-section.section-right{-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%)}.loaded #wait{opacity:0;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}.loaded #wait-wrapper{visibility:hidden;-webkit-transition:all .7s 1s ease-out;transition:all .7s 1s ease-out}
+    </style>
+    <style>
+        .bar__module .menu-horizontal li a{font-size:.85em;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+        @media all and (max-width:767px){.bar .row{text-align:center}.bar__module{display:inline-block;float:none}.bar .right{display:block;float:none;text-align:center}}
+        .command-table td:first-child{font-weight:600}
+    </style>
+
+</head>
+
+<body data-smooth-scroll-offset="77">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div id="wait-wrapper">
+        <div id="wait"></div>
+        <div class="wait-section section-left"></div>
+        <div class="wait-section section-right"></div>
+    </div>
+    <a id="start" aria-hidden="true"></a>
+    <header class="nav-container">
+        <nav class="bar bar-3 bar--absolute bar--transparent" data-fixed-at="200" aria-label="Main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="bar__module">
+                            <a href="#start"><img class="logo logo-dark" alt="Voice Dictation" src="images/logo.png"> <img class="logo logo-light" alt="Speech Recognition Software" src="images/logo.png"></a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="bar__module">
+                            <ul class="menu-horizontal">
+                                <li><a class="inner-link" href="#app">Dictation</a></li>
+                                <li><a class="inner-link" href="#commands">Voice Commands</a></li>
+                                <li><a class="inner-link" href="#faq">FAQ</a></li>
+                                <li><a class="inner-link" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="bar__module">
+                            <a class="btn btn--sm btn--primary type--uppercase inner-link" href="#app"><span class="btn__text">Launch</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main" class="main-container">
+        <section class="cover height-100 bg--dark switchable" id="home">
+            <div class="container pos-vertical-center">
+                <div class="row">
+                    <div class="col-md-5 col-sm-7 col-xs-12">
+                        <div class="switchable__text">
+                            <h1 class="h3">Type with your Voice in <span class="inline-block typed-text typed-text--cursor color--primary" data-typed-strings="Türkçe,Español,English,हिंदी,Italiano,Deutsch,Français,Nederlands,Português,বাংলা,తెలుగు,मराठी,தமிழ்,ગુજરાતી,ಕನ್ನಡ,മലയാളം,ਪੰਜਾਬੀ,اُردُو‎,Suomi,Dansk,Svenska,Español,Magyarország,Česko,日本語,ไทย,Indonesia,Türkçe,العَرَبِيَّة‎,Polski,Русский">any language</span></h1>
+                            <p class="lead">Use the magic of speech recognition to write emails and documents in Google Chrome.</p>
+                            <p class="lead">Speech To Text accurately transcribes your speech to text in real time. You can add paragraphs, punctuation marks, and even smileys using voice commands.</p>
+                            <a class="btn btn--primary type--uppercase inner-link" href="#app"><span class="btn__text">Launch</span></a>
+                            <a class="btn btn--primary-2 type--uppercase inner-link" href="#commands"><span class="btn__text">Voice Commands</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-4 col-xs-12">
+                        <div class="video-cover border--round box-shadow-wide">
+                            <div class="background-image-holder"><img alt="Languages supported by Speech To Text dictation" src="images/languages.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="switchable switchable--switch bg--primary space--md" id="app">
+            <div class="container">
+                <div class="row" id="dictation">
+                    <div class="col-lg-offset-1 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="input-select chrome langdd mt--2">
+                            <select name="lang" id="lang" aria-label="Choose your language" onchange="dictation('lang')">
+                                <option value selected="selected" disabled="disabled">Choose your Language</option>
+                            </select>
+                        </div>
+                        <div class="commands"></div>
+                        <div class="text-block mt--1">
+                            <p class="log"><span aria-live="polite">Click the microphone icon and speak</span> <img src="images/mic.svg" alt="Microphone listening indicator" class="bars"></p>
+                        </div>
+                        <div class="text-block mt--2 teaser hidden-xs"></div>
+                    </div>
+                    <div class="col-lg-7 col-md-8 col-sm-8 col-xs-12">
+                        <div class="notepad">
+                            <div id="toolbar" class="hidden-xs"><span class="ql-formats"><button type="button" class="ql-bold" aria-label="Bold"></button> <button type="button" class="ql-italic" aria-label="Italic"></button> <button type="button" class="ql-underline" aria-label="Underline"></button> </span><span class="ql-formats"><select class="ql-color" aria-label="Text colour"></select> <select class="ql-background" aria-label="Background colour"></select> <select class="ql-align" aria-label="Text alignment"></select> </span>
+                                <span class="ql-formats hidden-xs">
+                                    <button type="button" class="ql-list" value="ordered" aria-label="Numbered list"></button>
+                                    <button type="button" class="ql-list" value="bullet" aria-label="Bulleted list"></button>
+                                    <button type="button" class="ql-indent" value="-1" aria-label="Decrease indent"></button>
+                                    <button type="button" class="ql-indent" value="+1" aria-label="Increase indent"></button>
+                                    </span><span class="ql-formats"><button type="button" class="ql-direction" value="rtl" aria-label="Right to left text direction"></button> <button type="button" class="ql-clean" aria-label="Clear formatting"></button></span></div>
+                            <div id="speech"></div>
+                            <div class="action-buttons">
+                                <div class="left chrome"><a href="#" class="btn-mic btn btn--primary-1"><span class="btn__text listen">Start</span><div class="loading-indicator hide"></div></a></div>
+                                <div class="right btn-group"><a data-tooltip="Copy text to Clipboard" href="#" class="btn btn--sm btn--primary btn-clipboard"><span class="btn__text btn__copy">Copy</span> </a><a data-tooltip="Download File as Plain Text" href="#" onclick="dictation('save');return false;"
+                                    class="btn btn--sm btn-save btn--primary"><span class="btn__text">Save</span> </a>
+                                    <a data-tooltip="Publish your note online" href="#" onclick="dictation('gist');return false;" class="btn btn--sm btn-save btn--primary"><span class="btn__text">Publish</span> </a><a data-tooltip="Share on Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?related=OathanRex&amp;text=I%20%e2%9d%a4%20oatanrex.github.io%20for%20voice%20typing&amp;via=oathanrex&amp;url=https://oathanrex.blogspot.com"
+                                    class="btn btn--sm btn-save btn--primary"><span class="btn__text">Tweet</span> </a>
+                                    <a data-tooltip="Text to Speech" href="#" onclick="dictation('play');return false;" class="btn btn--sm btn--primary btn-tts-parent"><span class="btn__text">Play</span> </a><a data-tooltip="Email This" target="_blank" rel="noopener noreferrer" href="mailto:?body=" onclick="dictation('mail')" class="btn btn--sm btn-clear btn--primary btn-mail"><span class="btn__text">Email</span> </a>
+                                    <a data-tooltip="Save as PDF, or Print" href="#" onclick="dictation('print');return false;" class="btn btn--sm btn-clear btn--primary"><span class="btn__text">Print</span> </a><a data-tooltip="Clear Dictation Notepad" href="#" onclick="dictation('clear');return false;" class="btn btn--sm btn-clear btn--primary"><span class="btn__text">Clear</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--md bg--secondary" id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h2>Why Speech To Text?</h2>
+                        <p class="lead">Fast, free and private voice dictation powered by Google Speech Recognition.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature feature-1">
+                            <i aria-hidden="true" class="icon stack-up-open-big"></i>
+                            <h3>Real-Time Transcription</h3>
+                            <p>Your speech is converted to text instantly as you speak â€” no waiting, no typing.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature feature-1">
+                            <i aria-hidden="true" class="icon stack-users"></i>
+                            <h3>30+ Languages</h3>
+                            <p>Dictate in English, हिन्दी, Español, Français, العربية, বাংলা and many more languages.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature feature-1">
+                            <i aria-hidden="true" class="icon stack-cog"></i>
+                            <h3>Voice Commands</h3>
+                            <p>Add paragraphs, punctuation and smileys using simple voice commands.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="feature feature-1">
+                            <i aria-hidden="true" class="icon stack-publish"></i>
+                            <h3>100% Private</h3>
+                            <p>Text stays in your browser locally â€” no data is uploaded or stored anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="switchable bg--white space--md" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7">
+                        <h2>Voice Dictation - Type with your Voice</h2>
+                        <p class="lead">Speech To Text can recognize and transcribe popular languages including English, Español, Français, Italiano, Português, हिन्दी, தமிழ், اُردُو, বাংলা, ગુજરાતી, ಕನ್ನಡ, and more. See the full list of <a class="inner-link" href="#languages">supported languages</a>.</p>
+                        <p class="lead">You can add new paragraphs, punctuation marks, smileys and other special characters using simple voice commands. For instance, say "New line" to move the cursor to the next line or say "Smiling Face" to insert :-) smiley. See the list of supported <a class="inner-link" href="#commands">voice commands</a>.</p>
+                        <p class="lead">Speech To Text uses Google Speech Recognition to transcribe your spoken words into text. It stores the converted text in your browser locally and no data is uploaded anywhere. <a class="inner-link" href="#faq">Learn more</a>.</p>
+                        <p><a class="btn btn--primary type--uppercase inner-link" href="#app"><span class="btn__text">Speech to Text</span></a></p>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <div class="text-block">
+                            <h3>Contact</h3>
+                            <p>Telegram @oathanrex</p>
+                        </div>
+                        <div class="text-block">
+                            <h3>System Requirements</h3>
+                            <p>Google Chrome
+                                <br>Windows/Mac/Linux
+                                <br>Internet Connection</p>
+                        </div>
+                        <div class="text-block">
+                            <h3>Resources</h3>
+                            <p><a class="inner-link" href="#commands">Voice Commands</a>
+                                <br><a class="inner-link" href="#faq">FAQ</a>
+                                <br><a target="_blank" rel="noopener noreferrer" href="https://t.me/oathanrex">Contact Support</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--md" id="commands">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                        <div class="text-center">
+                            <h2>Speech Recognition Commands</h2>
+                            <hr class="short">
+                            <p class="lead">Speech To Text lets you write text by voice alone, without needing a keyboard or mouse. Use these commands while dictating.</p>
+                        </div>
+                        <h3>Common Commands</h3>
+                        <table class="border--round table--alternate-row command-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">To do this</th>
+                                    <th scope="col">Say this</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Insert a new paragraph</td>
+                                    <td>New paragraph, Insert sentence, Add new para, Add paragraph, New line</td>
+                                </tr>
+                                <tr>
+                                    <td>Turn on listening mode</td>
+                                    <td>Start dictation, Start listening, Wake up, Begin dictation, Microphone on</td>
+                                </tr>
+                                <tr>
+                                    <td>Turn off listening mode</td>
+                                    <td>Go to sleep, Stop listening, Microphone off, End dictation</td>
+                                </tr>
+                                <tr>
+                                    <td>Delete the typed text</td>
+                                    <td>Clear everything, Delete all text, Remove everything</td>
+                                </tr>
+                                <tr>
+                                    <td>Copy text to clipboard</td>
+                                    <td>Copy to Clipboard</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="mt--2">Smileys</h3>
+                        <table class="border--round table--alternate-row command-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">To insert this</th>
+                                    <th scope="col">Say this</th>
+                                    <th scope="col">To insert this</th>
+                                    <th scope="col">Say this</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>;-)</td>
+                                    <td>Wink face</td>
+                                    <td>:-)</td>
+                                    <td>Smile, Smiley, Smiling face, Happy face</td>
+                                </tr>
+                                <tr>
+                                    <td>:-))</td>
+                                    <td>Very happy face</td>
+                                    <td>:-(</td>
+                                    <td>Frown, Sad face, Angry face</td>
+                                </tr>
+                                <tr>
+                                    <td>:-|</td>
+                                    <td>Straight face, Neutral face</td>
+                                    <td>:-/</td>
+                                    <td>Annoyed face</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="mt--2">Special Characters</h3>
+                        <table class="border--round table--alternate-row command-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">To insert this</th>
+                                    <th scope="col">Say this</th>
+                                    <th scope="col">To insert this</th>
+                                    <th scope="col">Say this</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>@</td>
+                                    <td>Add at, at the rate, at sign</td>
+                                    <td>#</td>
+                                    <td>Add hashtag, hash sign, number sign</td>
+                                </tr>
+                                <tr>
+                                    <td>+</td>
+                                    <td>Add plus, plus sign</td>
+                                    <td>-</td>
+                                    <td>Add minus, minus sign, minus</td>
+                                </tr>
+                                <tr>
+                                    <td>÷</td>
+                                    <td>Add division, division sign, division</td>
+                                    <td>x</td>
+                                    <td>Add multiplication, multiplication sign</td>
+                                </tr>
+                                <tr>
+                                    <td>*</td>
+                                    <td>Add asterisk, insert asterisk</td>
+                                    <td>&gt;</td>
+                                    <td>Add greater than, greater than sign</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;</td>
+                                    <td>Add less than, less than sign</td>
+                                    <td>$, &yen;, &euro;, &cent; &pound;</td>
+                                    <td>Insert dollar (or yen or euro or cent or pound) sign</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="mt--2">Punctuation Marks</h3>
+                        <p>You can prefix the command with either "add " or "insert ". For instance, you can say "add apostrophe" or say "insert apostrophe" and both commands will add the &apos; symbol at the cursor position.</p>
+                        <table class="border--round table--alternate-row command-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">To insert this</th>
+                                    <th scope="col">Say this</th>
+                                    <th scope="col">To insert this</th>
+                                    <th scope="col">Say this</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>.</td>
+                                    <td>full stop, dot, point, period</td>
+                                    <td>,</td>
+                                    <td>comma</td>
+                                </tr>
+                                <tr>
+                                    <td>&middot;</td>
+                                    <td>center dot</td>
+                                    <td>(space)</td>
+                                    <td>space</td>
+                                </tr>
+                                <tr>
+                                    <td>!</td>
+                                    <td>exclamation mark, exclamation point</td>
+                                    <td>&amp;</td>
+                                    <td>ampersand</td>
+                                </tr>
+                                <tr>
+                                    <td>&apos;</td>
+                                    <td>apostrophe</td>
+                                    <td>&deg;</td>
+                                    <td>degree</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>hashtag</td>
+                                    <td>|</td>
+                                    <td>vertical bar</td>
+                                </tr>
+                                <tr>
+                                    <td>&hellip;</td>
+                                    <td>ellipsis</td>
+                                    <td>:</td>
+                                    <td>colon</td>
+                                </tr>
+                                <tr>
+                                    <td>;</td>
+                                    <td>semicolon</td>
+                                    <td>?</td>
+                                    <td>question mark</td>
+                                </tr>
+                                <tr>
+                                    <td>/</td>
+                                    <td>forward slash</td>
+                                    <td>\</td>
+                                    <td>backslash</td>
+                                </tr>
+                                <tr>
+                                    <td>_</td>
+                                    <td>underscore</td>
+                                    <td>&ndash;</td>
+                                    <td>hyphen</td>
+                                </tr>
+                                <tr>
+                                    <td>&mdash;</td>
+                                    <td>dash</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="mt--2">Quotes &amp; Brackets</h3>
+                        <table class="border--round table--alternate-row command-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">To insert this</th>
+                                    <th scope="col">Say this</th>
+                                    <th scope="col">To insert this</th>
+                                    <th scope="col">Say this</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>&lsquo;</td>
+                                    <td>Open single quote</td>
+                                    <td>&rsquo;</td>
+                                    <td>Close single quote</td>
+                                </tr>
+                                <tr>
+                                    <td>&ldquo;</td>
+                                    <td>Open double quote</td>
+                                    <td>&rdquo;</td>
+                                    <td>Close double quote</td>
+                                </tr>
+                                <tr>
+                                    <td>{</td>
+                                    <td>Open brace</td>
+                                    <td>}</td>
+                                    <td>Close brace</td>
+                                </tr>
+                                <tr>
+                                    <td>(</td>
+                                    <td>Open parentheses</td>
+                                    <td>)</td>
+                                    <td>Close parenthesis</td>
+                                </tr>
+                                <tr>
+                                    <td>[</td>
+                                    <td>Open bracket</td>
+                                    <td>]</td>
+                                    <td>Close bracket</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;</td>
+                                    <td>Open angle bracket</td>
+                                    <td>&gt;</td>
+                                    <td>Close angle bracket</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--md bg--secondary" id="languages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h2>Supported Languages</h2>
+                        <hr class="short">
+                        <p class="lead">Here's a list of languages supported by speech recognition.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-center">Afrikaans, Bahasa Indonesia, Bahasa Melayu, Català, Čeština, Dansk, Deutsch, English, Español, Euskara, Filipino, Français, Galego, Hrvatski, IsiZulu, Íslenska, Italiano, Lietuvių, Magyar, Nederlands, Norsk (Bokmål), Polski, Português, Română, Slovenčina, Slovenščina, Suomi, Svenska, Tiếng Việt, Türkçe, Ελληνικά, Български, Русский, Српски, Українська, עברית (Hebrew), العربية, فارسی, हिन्दी (Hindi), اُردُو (Urdu), አማርኛ, Azərbaycanca, বাংলা, ગુજરાતી, ಕನ್ನಡ, ភាសាខ្មែរ, Latviešu, മലയാളം, मराठी, ລາວ, नेपाली भाषा, සිංහල, Basa Sunda, తెలుగు, Kiswahili, ქართული, Հայերեն, தமிழ், ไทย, 中文（中国）, 中文（台灣）, 中文（香港）, 日本語, 한국어</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--md" id="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                        <div class="text-center">
+                            <h2>Frequently Asked Questions</h2>
+                            <hr class="short">
+                            <p class="lead"><a class="inner-link" href="#start">Speech To Text</a> lets you type with your voice in any language. When you speak into the microphone, your speech is converted into text in real-time, ready for revision and editing.</p>
+                        </div>
+                        <ul class="results-list">
+                            <li>
+                                <h3>What are the system requirements?</h3>
+                                <p class="lead">Speech To Text uses Google's powerful Speech Recognition engine to transcribe your voice into text and the results are extremely fast. You need <strong>Google Chrome</strong> browser on your Windows PC, Mac OS X or Linux. Speech To Text works inside Chrome on Android too but we recommend desktop browser for improved productivity. It is not compatible with iPhone or iPad.</p>
+                            </li>
+                            <li>
+                                <h3>Does Speech To Text support my native language?</h3>
+                                <p class="lead">Speech To Text can understand spoken words in all popular languages including English, Español, Français, Italiano, Português, हिन्दी, தமிழ், اُردُو, বাংলা, ગુજરાતી, ಕನ್ನಡ, and more. See full list of <a class="inner-link" href="#languages">supported languages</a>.</p>
+                            </li>
+                            <li>
+                                <h3>Speech to text software for people with Special Needs</h3>
+                                <p class="lead">Assistive technology using speech recognition is known to benefit students with special needs and learning disabilities that interfere with their ability to spell and write. It makes writing easier for people who suffer from carpal tunnel syndrome or repetitive strain injury (RSI) in the hands or wrists.</p>
+                            </li>
+                            <li>
+                                <h3>How do I improve the accuracy of speech recognition?</h3>
+                                <p class="lead">Speech recognition works best in quiet settings so if you are in a complex environment, like a noisy coffee shop, the engine may not accurately recognize your voice. The built-in microphone should be good enough but if you can invest in a dedicated headset, it would significantly improve the recognition accuracy. Dictate using longer phrases in natural voice rather than short phrases or individual words. You should pause briefly before and after you dictate punctuation.</p>
+                            </li>
+                            <li>
+                                <h3>Can I publish my notes on the Internet, like a blog?</h3>
+                                <p class="lead">Speech To Text, by default, saves everything in your browser and no data is saved online. However, you can click the 'Publish' button to publish your text to the Internet that anyone can access.</p>
+                            </li>
+                            <li>
+                                <h3>Speech To Text not working for me. What could be wrong?</h3>
+                                <p class="lead">Please ensure that you are inside Google Chrome, your microphone is turned on and that your computer is connected to the Internet. You should also close any other window or browser tab that uses Speech Recognition in your browser at the same time. If any browser tab shows a blinking red dot, it indicates that it is listening to your speech and you cannot have multiple tabs using Speech Recognition at the same time.</p>
+                                <p>Also, the first time you open Speech To Text, it would ask for permission to access your microphone so make sure you click "Allow".</p><img src="images/allow-microphone-access.png" alt="Allow microphone access in Chrome" width="633" height="246">
+                            </li>
+                            <li id="mic">
+                                <h3>How do I unblock my microphone to use Speech To Text again?</h3>
+                                <p class="lead">While you are on the Speech To Text website, go to the address bar and click the camera icon in the upper right corner. Here check the first option that says "Always allow to access your microphone". Click Done and reload the page. Alternatively, type chrome://settings/content/microphone in the Chrome address bar and remove Speech To Text from the Blocked list.</p><img src="images/unblock-microphone.png" alt="Unblock microphone in Chrome settings" width="604" height="364">
+                            </li>
+                            <li>
+                                <h3>What is your privacy policy? Is my data safe?</h3>
+                                <p class="lead">Speech To Text stores everything in your browser locally and not a byte of your data is transmitted or stored anywhere. It only sends the speech to Google servers via Chrome over HTTPS (secure) for speech recognition and outputs the transcribed text in your browser.</p>
+                            </li>
+                            <li>
+                                <h3>Can speech recognition work offline?</h3>
+                                <p class="lead">No. Speech To Text relies on the Google speech recognition engine that transcribes your speech to text in the cloud.</p>
+                            </li>
+                            <li>
+                                <h3>How do I get in touch with the developer?</h3>
+                                <p class="lead">Speech To Text was developed by <a href="https://oathanrex.blogspot.com/p/about.html" target="_blank" rel="noopener noreferrer">Oathan Rex</a>, Google Developer Expert and founder of <a href="https://oathanrex.blogspot.com/" target="_blank" rel="noopener noreferrer">Oathan Rex</a>. You can send him an email at <a href="mailto:oathanrex@gmail.com">oathanrex@gmail.com</a> or Telegram <a href="https://t.me/oathanrex" target="_blank" rel="noopener noreferrer">@oathanrex</a>.</p>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg--dark space--sm" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <a href="#start"><img class="logo" alt="Voice Dictation" src="images/logo.png"></a>
+                    <p class="type--fine-print">Free online speech recognition software that helps you write emails, documents and essays using your voice — without typing.</p>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="text-block">
+                        <h3>Resources</h3>
+                        <p><a class="inner-link" href="#commands">Voice Commands</a>
+                            <br><a class="inner-link" href="#faq">FAQ</a>
+                            <br><a target="_blank" rel="noopener noreferrer" href="https://t.me/oathanrex">Contact Support</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="text-block">
+                        <h3>Contact</h3>
+                        <p>Telegram <a target="_blank" rel="noopener noreferrer" href="https://t.me/oathanrex">@oathanrex</a>
+                            <br><a href="mailto:oathanrex@gmail.com">oathanrex@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-3">
+                    <div class="text-block">
+                        <h3>Get Started</h3>
+                        <a class="btn btn--sm btn--primary type--uppercase inner-link" href="#app"><span class="btn__text">Launch</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__lower row">
+                <div class="col-sm-12 text-center">
+                    <span class="type--fine-print">&copy; <span class="update-year"></span> Speech To Text — <a href="privacy-policy.html" rel="noopener">Privacy Policy</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="hidden">
+        <div class="modal-instance"><a class="btn modal-trigger nochrome" href="#"><span class="btn__text">Google Chrome</span></a>
+            <div class="modal-container">
+                <div class="modal-content">
+                    <div class="boxed boxed--lg text-center">
+                        <h3>Google Chrome Required</h3>
+                        <p class="lead">Please open inside <a href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Google Chrome</a> to use speech recognition.</p><img src="images/chrome.jpg" alt="Google Chrome"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-instance"><a class="btn modal-trigger nomic" href="#"><span class="btn__text">Allow Microphone</span></a>
+            <div class="modal-container">
+                <div class="modal-content">
+                    <div class="boxed boxed--lg text-center">
+                        <h3>Cannot Access Microphone</h3>
+                        <p class="lead">Please follow <a class="inner-link" href="#mic">this guide</a> for instructions on how to unblock your microphone.</p><img src="images/unblock-microphone.png" alt="Unblock microphone in Chrome settings" width="604" height="364"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-instance"><a class="btn modal-trigger gist" href="#"><span class="btn__text">Publish Online</span></a>
+            <div class="modal-container">
+                <div class="modal-content">
+                    <div class="boxed boxed--lg text-center">
+                        <p class="lead publishing">Speech to Text is now publishing your note online. Please wait..</p>
+                        <p class="lead published hidden"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-instance"><a class="btn modal-trigger tts" href="#"><span class="btn__text">Text to Speech</span></a>
+            <div class="modal-container">
+                <div class="modal-content">
+                    <div class="boxed boxed--lg">
+                        <p class="lead">Speed is the rate at which the selected voice will speak your transcribed text while the pitch governs how high or low the voice speaks.</p>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <label for="voiceselect">Voice:</label>
+                                <div class="input-select">
+                                    <select id="voiceselect" aria-label="Select voice for text to speech"></select>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <label for="pitch">Pitch:</label>
+                                <div class="input-number">
+                                    <input type="number" name="pitch" id="pitch" placeholder="Pitch" value="10" min="1" max="20">
+                                    <div class="input-number__controls"><span class="input-number__increase"><i aria-hidden="true" class="stack-up-open"></i> </span><span class="input-number__decrease"><i aria-hidden="true" class="stack-down-open"></i></span></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <label for="rate">Speed:</label>
+                                <div class="input-number">
+                                    <input type="number" name="rate" id="rate" placeholder="rate" value="10" min="1" max="20">
+                                    <div class="input-number__controls"><span class="input-number__increase"><i aria-hidden="true" class="stack-up-open"></i> </span><span class="input-number__decrease"><i aria-hidden="true" class="stack-down-open"></i></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p>
+                                    <br><a class="btn btn--primary type--uppercase" href="#" onclick="dictation('tts');return false;"><span class="btn__text btn-tts">Speak </span></a>
+                                    <a class="btn btn--primary-2 type--uppercase" href="#" onclick="dictation('reset');return false;"><span class="btn__text">Reset</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="hidden">
+        <div class="modal-instance"><a class="btn modal-trigger btn-languages" href="#"><span class="btn__text">Languages</span></a>
+            <div class="modal-container">
+                <div class="modal-content">
+                    <div class="boxed boxed--lg">
+                        <h2>Languages</h2>
+                        <hr class="short">
+                        <p class="lead">Here's a list of languages supported by speech recognition.</p>
+                        <p>Afrikaans, Bahasa Indonesia, Bahasa Melayu, Català, Čeština, Dansk, Deutsch, English, Español, Euskara, Filipino, Français, Galego, Hrvatski, IsiZulu, Íslenska, Italiano, Lietuvių, Magyar, Nederlands, Norsk (Bokmål), Polski, Português, Română, Slovenčina, Slovenščina, Suomi, Svenska, Tiếng Việt, Türkçe, Ελληνικά, Български, Русский, Српски, Українська, עברית (Hebrew), العربية, فارسی, हिन्दी (Hindi), اُردُو (Urdu), አማርኛ, Azərbaycanca, বাংলা, ગુજરાતી, ಕನ್ನಡ, ភាសាខ្មែរ, Latviešu, മലയാളം, मराठी, ລາວ, नेपाली भाषा, සිංහල, Basa Sunda, తెలుగు, Kiswahili, ქართული, Հայերեն, தமிழ், ไทย, 中文（中国）, 中文（台灣）, 中文（香港）, 日本語, 한국어</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><a class="back-to-top inner-link" href="#start" aria-label="Back to top" data-scroll-class="100vh:active"><i aria-hidden="true" class="stack-interface stack-up-open-big"></i></a>
+    <link rel="stylesheet" href="css/1598275350397.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet" type="text/css">
+    <link href="cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
+    <script src="cdn.quilljs.com/1.3.7/quill.min.js"></script>
+    <script src="js/1598275350397.js"></script>
+
+</body>
+</html>
