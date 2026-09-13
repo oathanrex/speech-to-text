@@ -22,7 +22,7 @@
 Hosted on **GitHub Pages**:
 
 ```
-https://oathanrex.github.io/
+https://oathanrex.github.io/speech-to-text/
 ```
 
 ## 🧑‍💻 How to Use
@@ -61,7 +61,7 @@ The repository is ships ready for Google ranking:
 - Semantic HTML with logical heading hierarchy (`h1 → h2 → h3`)
 - Meta description, Open Graph & Twitter cards
 - **JSON-LD structured data** (`WebApplication` schema) for rich results
-- `robots.txt` + `sitemap.xml` pointing to `https://oathanrex.github.io/`
+- `robots.txt` + `sitemap.xml` pointing to `https://oathanrex.github.io/speech-to-text/`
 - Mobile-friendly responsive layout, fast local assets
 - WCAG 2.1 AA accessible (contrast, keyboard focus, skip links, ARIA)
 
@@ -85,14 +85,14 @@ The site is structured to pass AdSense review:
 The repo is already initialised and committed. Just run:
 
 ```bash
-# 1. Create an empty repo named "oathanrex.github.io" on github.com, then:
-git remote add origin https://github.com/oathanrex/oathanrex.github.io.git
+# 1. Create an empty repo named "speech-to-text" on github.com, then:
+git remote add origin https://github.com/oathanrex/speech-to-text.git
 git push -u origin main
 
 # 2. Enable it in Settings → Pages → Source: main branch → Save
 ```
 
-The site will be live at `https://oathanrex.github.io/`.
+The site will be live at `https://oathanrex.github.io/speech-to-text/`.
 
 ## 📄 License
 

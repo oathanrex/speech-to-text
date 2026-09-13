@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://oathanrex.github.io/sitemap.xml
+Sitemap: https://oathanrex.github.io/speech-to-text/sitemap.xml
