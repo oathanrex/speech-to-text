@@ -1,99 +1,107 @@
 # 🎙️ Speech To Text — Voice Dictation
 
-**Free online speech recognition & voice typing tool.** Type with your voice in any language using Google Speech Recognition — right inside Google Chrome. No sign-up, no uploads, fully private.
+**Free online speech recognition & voice typing tool.** Type with your voice instead of a keyboard — dictate emails, essays, documents and messages in any language, right inside your browser. No sign-up. No downloads. 100% free.
 
-> ✍️ Think of it as a smart voice notepad: dictate emails, essays, documents and messages with punctuation, smileys and formatting — all by speaking.
+👉 **[Start dictating now →](https://oathanrex.github.io/speech-to-text/)**
 
 ---
 
-## ✨ Features
+## ✨ What you can do
 
-- **Real-time voice typing** — Google Speech Recognition transcribes as you speak
-- **60+ languages** — English, हिन्दी, Español, Français, العربية, বাংলা, தமிழ், اُردُو, 中文, 한국어 and many more
-- **Voice commands** — add paragraphs, punctuation, smileys and special characters by voice
-- **Rich editor (Quill)** — bold, italic, lists, colours, alignment, RTL support
-- **Text to Speech** — listen to your notes with adjustable voice, pitch and speed
-- **100% private** — text stays in your browser's local storage; no data is uploaded or sold
-- **Action buttons** — copy, save to file, publish online, tweet, email, print, clear
-- **No account required** — free to use, forever
+- **Speak instead of typing** — your words appear on screen in real time
+- **Choose from 60+ languages** — English, हिन्दी, Español, Français, العربية, বাংলা, தமிழ், اُردُو, 中文, 日本語, 한국어 and many more
+- **Add punctuation by voice** — say *"comma"*, *"full stop"*, *"question mark"* while speaking
+- **Add smileys & symbols** — say *"smiling face"* to insert `:-)`
+- **Format your text** — bold, italic, underline, lists, colours, alignment, right-to-left text
+- **Listen to your notes** — text-to-speech with adjustable voice, pitch and speed
+- **Save or share** — copy to clipboard, download as a text file, print, email, or publish online
+- **Stay private** — your text is stored only in your browser. Nothing is saved on our servers.
 
-## 🚀 Live Demo
+## 📋 What you need
 
-Hosted on **GitHub Pages**:
-
-```
-https://oathanrex.github.io/speech-to-text/
-```
-
-## 🧑‍💻 How to Use
-
-1. Open the site in **Google Chrome** (required for speech recognition).
-2. Click **Allow** when Chrome asks for microphone access.
-3. Choose your **language** from the dropdown.
-4. Click the **Start / mic** button and speak.
-5. Say *"New paragraph"*, *"comma"*, *"full stop"*, *"smiling face"* etc. to punctuate naturally.
-
-## 📋 Voice Commands (quick reference)
-
-| To insert | Say |
+| Requirement | Details |
 |---|---|
-| New paragraph / line | "New line", "New paragraph" |
-| Comma | "comma" |
-| Full stop | "period", "dot", "full stop" |
-| Question mark | "question mark" |
-| Emoticon `:-)` | "smile", "smiling face" |
-| Stop listening | "stop listening", "go to sleep" |
-| Start listening | "start dictation", "wake up" |
+| Browser | **Google Chrome** (speech recognition works in Chrome only) |
+| Device | Windows PC, Mac, Linux or Android |
+| Microphone | Built-in mic is fine; a headset improves accuracy |
+| Internet | Required (recognition runs in the cloud) |
 
-> Full command set (smileys, punctuation, quotes, brackets, currency signs) is listed on the site's **Voice Commands** section.
+> ⚠️ Not compatible with iPhone or iPad.
 
-## 🧱 Built With
+## 🧑‍💻 How to start
 
-- **HTML5 / CSS3** — semantic markup, custom accessible theme
-- **JavaScript** — dictation engine, Quill 1.3.7 rich-text editor
-- **Google Speech Recognition** — Web Speech API (Chrome)
-- **Stack framework CSS** — responsive grid & components
+1. Open [**Speech To Text**](https://oathanrex.github.io/speech-to-text/) in Google Chrome.
+2. Click **Allow** when Chrome asks for microphone access.
+3. Pick your **language** from the dropdown.
+4. Click the **Start** (microphone) button and speak naturally.
+5. Use voice commands (below) for punctuation and paragraphs.
+6. Click **Copy**, **Save**, **Email** or **Print** when you are done.
 
-## 🔍 SEO & Ranking
+## 🗣️ Voice Commands
 
-The repository is ships ready for Google ranking:
+Say these while dictating:
 
-- Semantic HTML with logical heading hierarchy (`h1 → h2 → h3`)
-- Meta description, Open Graph & Twitter cards
-- **JSON-LD structured data** (`WebApplication` schema) for rich results
-- `robots.txt` + `sitemap.xml` pointing to `https://oathanrex.github.io/speech-to-text/`
-- Mobile-friendly responsive layout, fast local assets
-- WCAG 2.1 AA accessible (contrast, keyboard focus, skip links, ARIA)
+### Paragraphs & control
 
-### To rank in Google (after pushing):
-1. Submit the site + sitemap in **Google Search Console**.
-2. Request indexing for the homepage.
-3. Create an **About/Contact** presence (already included in the FAQ & footer contact links) — quality content pages help rankings.
+| To do this | Say this |
+|---|---|
+| Insert a new line / paragraph | "New line", "New paragraph", "Add paragraph" |
+| Start listening | "Start dictation", "Wake up", "Microphone on" |
+| Stop listening | "Stop listening", "Go to sleep", "Microphone off" |
+| Delete everything | "Clear everything", "Delete all text" |
+| Copy your text | "Copy to clipboard" |
 
-## 🛡️ Google AdSense Friendly
+### Punctuation
 
-The site is structured to pass AdSense review:
+| To insert | Say this |
+|---|---|
+| , | "comma" |
+| . | "full stop", "dot", "period" |
+| ? | "question mark" |
+| ! | "exclamation mark" |
+| : / ; | "colon" / "semicolon" |
+| - / — | "hyphen" / "dash" |
+| ' | "apostrophe" |
+| " " | "open quote" / "close quote" |
+| ( ) | "open parenthesis" / "close parenthesis" |
 
-- **Privacy Policy page** included (`privacy-policy.html`) with: Google cookies & personalised ads disclosure, opt-out links, microphone usage, contact info
-- **Contact information** (Telegram + email) present in the footer and FAQ
-- **Original, quality content** — features, commands reference and a complete FAQ
-- Clean navigation with no broken pages
-- No auto-generated or duplicated content
+> Tip: You can prefix punctuation with *"add"* or *"insert"* — e.g. say **"insert apostrophe"**.
 
-## 📦 Deployment (GitHub Pages)
+### Smileys
 
-The repo is already initialised and committed. Just run:
+| To insert | Say this |
+|---|---|
+| `:-)` | "smile", "smiley", "happy face" |
+| `;-)` | "wink face" |
+| `:-((` | "sad face", "frown" |
+| `:-))` | "very happy face" |
 
-```bash
-# 1. Create an empty repo named "speech-to-text" on github.com, then:
-git remote add origin https://github.com/oathanrex/speech-to-text.git
-git push -u origin main
+## ✅ Tips for best accuracy
 
-# 2. Enable it in Settings → Pages → Source: main branch → Save
-```
+- Speak in a **quiet room** — background noise reduces accuracy
+- Use **longer, natural phrases** instead of single words
+- **Pause briefly** before and after saying punctuation
+- A **headset microphone** works better than a laptop mic
+- Keep only **one tab** listening at a time
 
-The site will be live at `https://oathanrex.github.io/speech-to-text/`.
+## 🛠️ Troubleshooting
 
-## 📄 License
+**🎤 Microphone blocked or not working?**
+While on the site, click the **camera icon** in Chrome's address bar and select *"Always allow to access your microphone"*, then reload. You can also visit `chrome://settings/content/microphone` and remove this site from the **Blocked** list.
 
-Free to use for personal and commercial projects. Built with Google Chrome's Web Speech API; your use of the service also requires agreeing to [Google's Terms of Service](https://policies.google.com/terms).
+**❌ Speech to text not working at all?**
+Make sure you are in **Google Chrome**, your microphone is on, and you are connected to the internet. Close any other tab that uses speech recognition (a blinking red dot means a tab is listening).
+
+**🔇 Does it work offline?**
+No — speech recognition runs on Google's servers, so an internet connection is required.
+
+## 🔒 Privacy
+
+Your dictated text is stored **only in your browser** — no notes are uploaded to our servers. Audio is sent securely (HTTPS) to Google's speech recognition service only while you are dictating. See the full [**Privacy Policy**](https://oathanrex.github.io/speech-to-text/privacy-policy.html).
+
+## 💬 Need help?
+
+- Telegram: [@oathanrex](https://t.me/oathanrex)
+- Email: [oathanrex@gmail.com](mailto:oathanrex@gmail.com)
+
+Found a bug or want a new feature? [Open an issue](../../issues/new) in this repository.
