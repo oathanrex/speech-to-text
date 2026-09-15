@@ -665,6 +665,14 @@
             </div>
         </div>
     </div><a class="back-to-top inner-link" href="#start" aria-label="Back to top" data-scroll-class="100vh:active"><i aria-hidden="true" class="stack-interface stack-up-open-big"></i></a>
+    <script>
+    (function(){
+        function hideLoader(){document.body.classList.add("loaded")}
+        if(document.readyState==="complete"){hideLoader()}
+        else{window.addEventListener("load",hideLoader)}
+        setTimeout(hideLoader,3000)
+    })();
+    </script>
     <link rel="stylesheet" href="css/1598275350397.css">
     <link rel="stylesheet" href="css/custom.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet" type="text/css">
